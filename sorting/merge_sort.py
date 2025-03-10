@@ -1,3 +1,6 @@
+from sorting.exception_handler import exception_handler
+
+@exception_handler
 def merge_sort(arr):
     """
     Perform merge sort on a given list using recursion.

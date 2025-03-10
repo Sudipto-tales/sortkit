@@ -1,3 +1,6 @@
+from sorting.exception_handler import exception_handler
+
+@exception_handler
 def insertion_sort(arr):
     """
     Perform insertion sort on a given list.

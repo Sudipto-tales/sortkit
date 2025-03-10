@@ -1,3 +1,6 @@
+from sorting.exception_handler import exception_handler
+
+@exception_handler
 def selection_sort(arr):
     """
     Perform selection sort on a given list.

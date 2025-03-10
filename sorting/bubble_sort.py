@@ -1,3 +1,6 @@
+from sorting.exception_handler import exception_handler
+
+@exception_handler
 def bubble_sort(arr):
     """
     Bubble Sort Algorithm

@@ -1,3 +1,6 @@
+from sorting.exception_handler import exception_handler
+
+@exception_handler
 def quick_sort(arr):
     """
     Perform Quick sort on a given list.

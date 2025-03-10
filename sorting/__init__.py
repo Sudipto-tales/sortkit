@@ -1,5 +1,7 @@
 # This file is used to import all the sorting algorithms in the package
 # and make them available for use in the main program.
+# This Program is written by Sudipto Ghosh for the Repository "Sortkit"
+# This is a package for sorting algorithms in Python.
 
 from sorting.bubble_sort import bubble_sort
 from sorting.selection_sort import selection_sort

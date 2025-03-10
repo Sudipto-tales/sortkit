@@ -1,6 +1,6 @@
 from sorting.exception_handler import exception_handler
 
-@exception_handler
+
 def heapify(arr, n, i):
     largest = i  # Assume root is the largest
     left = 2 * i + 1
@@ -19,6 +19,7 @@ def heapify(arr, n, i):
         arr[i], arr[largest] = arr[largest], arr[i]
         heapify(arr, n, largest)
 
+@exception_handler
 def heap_sort(arr):
     n = len(arr)
 

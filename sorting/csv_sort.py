@@ -1,16 +1,17 @@
-def csv_sort(file_path, column_index=0):
-    """Reads a CSV file, sorts data based on a specific column, and returns sorted rows."""
-    with open(file_path, "r", encoding="utf-8") as file:
-        lines = file.readlines()  # Read all lines
+# Description: Sorts a CSV file or list of lists based on a specific column.
+def csv_sort(data, column_index=0):
+    """Sorts a CSV file or list of lists based on a specific column."""
+    
+    # Check if input is a file path (string), then read its content
+    if isinstance(data, str):
+        with open(data, "r", encoding="utf-8") as file:
+            lines = file.readlines()
+        data = [line.strip().split(",") for line in lines]  # Convert to list of lists
 
-    header = lines[0].strip().split(",")  # Extract header
-    data = [line.strip().split(",") for line in lines[1:]]  # Convert rows into lists
+    # Extract header and data separately
+    header, rows = data[0], data[1:]
 
-    sorted_data = sorted(data, key=lambda row: row[column_index].strip().lower())  # Case-insensitive sort
+    # Sort the data based on the specified column
+    sorted_data = sorted(rows, key=lambda row: row[column_index].strip().lower())
 
     return [header] + sorted_data  # Return sorted data including the header
-
-# Example Usage:
-sorted_rows = csv_sort("data.csv", column_index=1)  # Sort by 2nd column
-for row in sorted_rows:
-    print(row)

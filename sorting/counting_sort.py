@@ -1,31 +1,28 @@
-from .exception_handler import exception_handler
+from sorting.exception_handler import exception_handler
 
 @exception_handler
-def counting_sort(arr, count=None, output=None, index=None):
+def counting_sort(arr):
     if not arr:
-        return arr  
+        return []
 
-    if count is None:
-        min_val = min(arr)
-        max_val = max(arr)
-        range_of_elements = max_val - min_val + 1
+    max_val = max(arr)
+    min_val = min(arr)
+    range_of_elements = max_val - min_val + 1
 
-        count = [0] * range_of_elements
-        output = [0] * len(arr)
+    count = [0] * range_of_elements
+    output = [0] * len(arr)
 
-        for num in arr:
-            count[num - min_val] += 1
+    # Count occurrences of each element
+    for num in arr:
+        count[num - min_val] += 1
 
-        for i in range(1, range_of_elements):
-            count[i] += count[i - 1]
+    # Update count[i] to store the cumulative sum
+    for i in range(1, len(count)):
+        count[i] += count[i - 1]
 
-        index = len(arr) - 1
+    # Build the output array
+    for num in reversed(arr):
+        output[count[num - min_val] - 1] = num
+        count[num - min_val] -= 1
 
-    if index < 0:
-        return output
-
-    num = arr[index]
-    output[count[num - min(arr)] - 1] = num
-    count[num - min(arr)] -= 1
-
-    return counting_sort(arr, count, output, index - 1)
+    return output

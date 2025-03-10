@@ -1,23 +1,24 @@
 # This file is used to import all the sorting algorithms in the package
 # and make them available for use in the main program.
 
-from .bubble_sort import bubble_sort
-from .selection_sort import selection_sort
-from .insertion_sort import insertion_sort
-from .counting_sort import counting_sort
-from .merge_sort import merge_sort
-from .quick_sort import quick_sort
-from .heap_sort import heap_sort
-from .shell_sort import shell_sort
-from .radix_sort import radix_sort
-from .bogo_sort import bogo_sort
-from .bucket_sort import bucket_sort
-from .tim_sort import tim_sort
-from .comb_sort import comb_sort
-from .gnome_sort import gnome_sort
-from .choose_algo import choose_algo
-from .sorting import sorting
-from .exception_handler import to_list
+from sorting.bubble_sort import bubble_sort
+from sorting.selection_sort import selection_sort
+from sorting.insertion_sort import insertion_sort
+from sorting.counting_sort import counting_sort
+from sorting.merge_sort import merge_sort
+from sorting.quick_sort import quick_sort
+from sorting.heap_sort import heap_sort
+from sorting.shell_sort import shell_sort
+from sorting.radix_sort import radix_sort
+from sorting.bogo_sort import bogo_sort
+from sorting.bucket_sort import bucket_sort
+from sorting.tim_sort import tim_sort
+from sorting.comb_sort import comb_sort
+from sorting.gnome_sort import gnome_sort
+from sorting.string_sort import string_sort
+from sorting.sorting import sorting
+from sorting.csv_sort import csv_sort
+from sorting.makelist import makelist
 
 __all__ = [
     "bubble_sort",
@@ -34,7 +35,8 @@ __all__ = [
     "tim_sort",
     "comb_sort",
     "gnome_sort",
-    "choose_algo",
+    "string_sort",
     "sorting",
-    "to_list"
+    "csv_sort",
+    "makelist"
 ]

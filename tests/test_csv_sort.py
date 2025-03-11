@@ -1,11 +1,11 @@
 # We will write a test case for the csv_sort function in this file.
 import unittest
-from sorting import csv_sort  # Importing your function
+from sortkit import csv_sort  # Importing your function
 
 class TestCSVSort(unittest.TestCase):
 
     def setUp(self):
-        """Set up test data for sorting."""
+        """Set up test data for sortkit."""
         self.test_data = './tests/test_csv.csv'
 
     def test_csv_sort_by_name(self):

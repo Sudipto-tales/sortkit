@@ -1,6 +1,6 @@
 # We will write test cases for all sorting algorithms in this file
 import unittest
-from sorting import bubble_sort, selection_sort, insertion_sort, quick_sort, merge_sort,heap_sort, counting_sort ,gnome_sort, string_sort , sorting, shell_sort, bogo_sort,bucket_sort,tim_sort,comb_sort
+from sortkit import bubble_sort, selection_sort, insertion_sort, quick_sort, merge_sort,heap_sort, counting_sort ,gnome_sort, string_sort , sorting, shell_sort, bogo_sort,bucket_sort,tim_sort,comb_sort
 
 class TestSortingAlgorithms(unittest.TestCase):
 

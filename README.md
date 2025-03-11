@@ -1,10 +1,10 @@
-Here's an updated and improved README with a CSV sorting example added:  
+Here's your updated README with a **functionality chart** included for better clarity:  
 
 ---
 
 # **SortKit - A Python Sorting Library**  
 
-SortKit is a Python library that provides efficient implementations of various sorting algorithms. This package allows users to easily sort lists and CSV data using different sorting techniques.  
+SortKit is a Python library that provides efficient implementations of various sorting algorithms. This package allows users to easily sort **lists** and **CSV data** using different sorting techniques.  
 
 ## **Features**  
 ✅ Supports multiple sorting algorithms:  
@@ -27,6 +27,19 @@ Install SortKit using `pip`:
 ```sh
 pip install sortkit
 ```  
+
+## **Functionality Chart**  
+
+| Function Name  | Sorting Type        | Description                                  | Example Usage |
+|--------------|------------------|----------------------------------|--------------|
+| `bubble_sort()`  | Bubble Sort        | Simple, compares adjacent elements   | `bubble_sort(arr)` |
+| `selection_sort()`  | Selection Sort    | Selects the smallest and swaps    | `selection_sort(arr)` |
+| `insertion_sort()`  | Insertion Sort    | Builds sorted list one item at a time  | `insertion_sort(arr)` |
+| `quick_sort()`  | Quick Sort        | Efficient, divide and conquer approach | `quick_sort(arr)` |
+| `merge_sort()`  | Merge Sort        | Splits, sorts, and merges lists   | `merge_sort(arr)` |
+| `heap_sort()`  | Heap Sort        | Uses heap structure to sort data  | `heap_sort(arr)` |
+| `counting_sort()`  | Counting Sort    | Efficient for small integer ranges   | `counting_sort(arr)` |
+| `csv_sort()`  | CSV Sorting       | Sorts a CSV file by a given column   | `csv_sort("file.csv", column_index=1)` |
 
 ## **Usage**  
 
@@ -76,4 +89,4 @@ This project is licensed under the **MIT License**.
 
 ---
 
-This updated README now includes a **CSV sorting example**, **better formatting**, and **more clarity on features**. 🚀 Let me know if you need further improvements!
+### 🚀 **Now with a clear function reference chart!** Let me know if you need more improvements. 😊
